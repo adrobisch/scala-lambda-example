@@ -4,8 +4,9 @@ Demonstrates the usage of https://github.com/gilt/sbt-aws-lambda.
 
 # Setup
 
-Move the `lambda.properties.example` to `lambda.properties` and fill in your values.
-The S3 Bucket must already exist in the AWS region or you will get `403` errors during deploy.
+- Create a S3 Bucket for the lambda jar.
+- Create a Role in the AWS IAM with the `AWSLambdaExecute` policy, lookup the `arn` of this role.
+- Move the `lambda.properties.example` to `lambda.properties` and fill in your values.
 
 # Deploy
 
